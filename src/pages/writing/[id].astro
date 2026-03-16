@@ -1,0 +1,160 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout
+  title={`${post.data.title} — Akash Mahajan`}
+  description={post.data.description}
+  canonicalPath={`/writing/${post.id}`}
+>
+  <article class="article">
+    <div class="article-inner">
+      <a href="/writing" class="back-link reveal">&larr; All writing</a>
+
+      <header class="article-header reveal reveal-d1">
+        <time class="article-date" datetime={post.data.date.toISOString()}>
+          {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+        <h1 class="article-title">{post.data.title}</h1>
+        <p class="article-desc">{post.data.description}</p>
+      </header>
+
+      <div class="article-body reveal reveal-d2">
+        <Content />
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .article { padding: 10rem var(--gutter) 4rem; }
+
+  .article-inner {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-dim);
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  .back-link:hover { color: var(--color-accent); }
+
+  .article-header { margin-bottom: 3rem; }
+
+  .article-date {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.75rem;
+    color: var(--color-text-dim);
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .article-title {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    color: var(--color-text);
+    margin-bottom: 0.75rem;
+    line-height: 1.15;
+  }
+
+  .article-desc {
+    font-size: 1.05rem;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+  }
+
+  .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--color-text-dim);
+  }
+
+  .article-body :global(h2) {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .article-body :global(h3) {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-body :global(p) {
+    margin-bottom: 1.25rem;
+  }
+
+  .article-body :global(a) {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-light);
+    text-underline-offset: 3px;
+  }
+  .article-body :global(a:hover) {
+    text-decoration-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .article-body :global(code) {
+    font-size: 0.9em;
+    background: var(--color-tag-bg);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+  }
+
+  .article-body :global(pre) {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+  }
+
+  .article-body :global(pre code) {
+    background: none;
+    padding: 0;
+  }
+
+  .article-body :global(ul), .article-body :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .article-body :global(li) {
+    margin-bottom: 0.4rem;
+  }
+
+  .article-body :global(blockquote) {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--color-text);
+    font-style: italic;
+  }
+
+  .article-body :global(img) {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+  }
+</style>

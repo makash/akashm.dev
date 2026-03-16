@@ -1,0 +1,35 @@
+{
+  "owner": "Akash Mahajan",
+  "site": "https://akashm.dev",
+  "updated_at": "2026-03-16",
+  "companies": {
+    "kloudle": {
+      "name": "Kloudle",
+      "url": "https://kloudle.com",
+      "description": "Cloud security for the agent era. Scanning, detection, and posture management."
+    },
+    "appsecco": {
+      "name": "Appsecco",
+      "url": "https://appsecco.com",
+      "description": "Application security consulting and training. From pentesting to AI red teaming."
+    }
+  },
+  "projects": [
+    { "name": "ccrank.dev", "company": "personal", "url": "https://github.com/makash/claude-leaderboard-using-ccusage", "tags": ["claude-code", "analytics", "cloudflare"] },
+    { "name": "SPA Hacker Agent", "company": "personal", "url": "https://github.com/makash/spa-hacking-agent", "tags": ["security", "agent", "pentesting"] },
+    { "name": "clawdwa", "company": "personal", "url": "https://github.com/makash/clawdwa", "tags": ["whatsapp", "claude", "agent-ops"] },
+    { "name": "Learn Claude Code Workbook", "company": "personal", "url": "https://github.com/makash/learn-claude-code", "tags": ["education", "claude-code", "workbook"] },
+    { "name": "Great Web Copy", "company": "personal", "url": "https://github.com/makash/great-web-copy", "tags": ["copywriting", "plugin", "marketing"] },
+    { "name": "PMF Plugin", "company": "personal", "url": "https://github.com/makash/pmf-plugin", "tags": ["pmf", "product-strategy", "founder-tools"] },
+    { "name": "Cloud Security List", "company": "personal", "url": "https://github.com/makash/cloud-security-list", "tags": ["cloud-security", "curation", "community"] },
+    { "name": "Learn Kannada Alphabet", "company": "personal", "url": "https://github.com/makash/learn-kannada-alphabet-for-kids", "tags": ["education", "pwa", "language-learning"] },
+    { "name": "Scam Calls India", "company": "personal", "url": "https://github.com/makash/scam-calls-india", "tags": ["security-awareness", "osint", "community"] },
+    { "name": "OpenClaw Secure Setup", "company": "personal", "url": "https://github.com/makash/getbot-secure-openclaw", "tags": ["security", "devops", "automation"] },
+    { "name": "Kloudle Scan", "company": "kloudle", "url": "https://github.com/Kloudle/kloudle-scan", "tags": ["cloud-security", "scanner", "cspm"] },
+    { "name": "Kloudle Agent Security Platform", "company": "kloudle", "url": null, "tags": ["platform", "agent-security", "private"] },
+    { "name": "Web Security Scanner AI Agent", "company": "appsecco", "url": "https://github.com/appsecco/appsecco-web-security-scanner-ai-agent", "tags": ["security", "ai-agent", "scanner"] },
+    { "name": "AI Security Knowledge Base", "company": "appsecco", "url": "https://github.com/appsecco/appsecco-ai-security-kb", "tags": ["knowledge-base", "security", "documentation"] },
+    { "name": "Pentester to AI Red Teamer", "company": "appsecco", "url": "https://github.com/appsecco/pentester-to-ai-red-teamer", "tags": ["training", "ai-red-teaming", "education"] },
+    { "name": "MCP Client & Proxy", "company": "appsecco", "url": null, "tags": ["mcp", "security", "proxy", "private"] }
+  ]
+}

@@ -1,0 +1,43 @@
+# Akash Mahajan
+
+> Founder of Kloudle and Appsecco. Security practitioner and builder. Creating cloud security tools, AI agents, and open-source projects.
+
+Akash Mahajan runs two security companies and maintains over a dozen open-source projects focused on cloud security, AI agent tooling, and security education. Based in India.
+
+For full context including all project descriptions, see [llms-full.txt](https://akashm.dev/llms-full.txt).
+
+## Links
+
+- [About](https://akashm.dev/about): Background, philosophy, and contact links
+- [Now](https://akashm.dev/now): What Akash is currently focused on
+- [Projects JSON](https://akashm.dev/api/projects.json): Machine-readable project data
+- [Kloudle](https://kloudle.com): Cloud security posture management for the agent era
+- [Appsecco](https://appsecco.com): Application security consulting and training
+
+## Projects
+
+- [Kloudle Scan](https://github.com/Kloudle/kloudle-scan): Open-source cloud security posture scanning
+- [Web Security Scanner AI Agent](https://github.com/appsecco/appsecco-web-security-scanner-ai-agent): AI-assisted web application security scanner
+- [AI Security Knowledge Base](https://github.com/appsecco/appsecco-ai-security-kb): Structured methodologies for AI and appsec testing
+- [Pentester to AI Red Teamer](https://github.com/appsecco/pentester-to-ai-red-teamer): Training for pentesters transitioning to AI red teaming
+- [SPA Hacker Agent](https://github.com/makash/spa-hacking-agent): Agent-driven SPA security scanner
+- [ccrank.dev](https://github.com/makash/claude-leaderboard-using-ccusage): Claude Code usage leaderboard and analytics
+
+## Contact
+
+- [X/Twitter](https://x.com/makash): @makash
+- [GitHub](https://github.com/makash): makash
+- [LinkedIn](https://www.linkedin.com/in/akashm/): /in/akashm
+- [YouTube](https://www.youtube.com/@makash): @makash
+- [Contact form](https://akashm.dev/#contact): Direct message
+
+## Optional
+
+- [clawdwa](https://github.com/makash/clawdwa): Claude from WhatsApp groups
+- [Learn Claude Code Workbook](https://github.com/makash/learn-claude-code): Hands-on Claude Code guides
+- [Great Web Copy](https://github.com/makash/great-web-copy): Claude Code plugin for website copy
+- [PMF Plugin](https://github.com/makash/pmf-plugin): Product-market-fit validation toolkit
+- [Cloud Security List](https://github.com/makash/cloud-security-list): Curated cloud security resources
+- [Learn Kannada Alphabet](https://github.com/makash/learn-kannada-alphabet-for-kids): Educational PWA for Kannada
+- [Scam Calls India](https://github.com/makash/scam-calls-india): Scam call pattern awareness
+- [OpenClaw Secure Setup](https://github.com/makash/getbot-secure-openclaw): Security hardening for OpenClaw

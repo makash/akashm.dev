@@ -1,0 +1,60 @@
+# Akash Mahajan — Full Context
+
+> Founder of Kloudle and Appsecco. Building security tools, AI agents, and open-source projects.
+> Website: https://akashm.dev | X: @makash | GitHub: makash
+
+## Identity
+
+- Name: Akash Mahajan
+- Location: India
+- Focus areas: Cloud security, application security, AI agents, developer tools, education
+- Handles: @makash (X, GitHub, YouTube), /in/akashm (LinkedIn)
+- Personal site: https://akashm.dev
+
+## Companies
+
+### Kloudle (https://kloudle.com)
+Role: Founder
+Cloud security for the agent era. Scanning, detection, and posture management built for teams shipping with AI agents. Products include Kloudle Scan (open-source CSPM tooling) and the Kloudle Agent Security Platform (private SaaS).
+
+### Appsecco (https://appsecco.com)
+Role: Founder
+Application security consulting and training company. Services range from traditional penetration testing to AI red teaming. Builds AI-powered security tools and maintains open-source security knowledge bases. Training programs help pentesters transition into AI security roles.
+
+## Active Projects (16 total)
+
+### Security Tools
+1. **SPA Hacker Agent** — Agent-driven single-page application security scanner with browser automation, recon workflows, and exploit validation. Uses Playwright for browser-based testing. https://github.com/makash/spa-hacking-agent
+2. **Kloudle Scan** — Cloud security posture scanning tooling adapted for modern cloud and agentic workflows. Open-source CSPM. https://github.com/Kloudle/kloudle-scan
+3. **Kloudle Agent Security Platform** — Private backend/frontend services for Kloudle's agent-era security platform covering scan, detection, data analysis, and reporting.
+4. **Web Security Scanner AI Agent** — AI-assisted web application security scanner focused on practical recon, analysis, and testing. https://github.com/appsecco/appsecco-web-security-scanner-ai-agent
+5. **MCP Client & Proxy** — MCP proxy/client tooling for routing and inspecting MCP server traffic during security testing. Private.
+6. **OpenClaw Secure Setup** — Opinionated security hardening and deployment flow for running OpenClaw quickly and safely. https://github.com/makash/getbot-secure-openclaw
+
+### AI Agent & Developer Tools
+7. **ccrank.dev** — Leaderboard and analytics for Claude Code usage, with a live public scoreboard. https://github.com/makash/claude-leaderboard-using-ccusage
+8. **clawdwa** — Use Claude from WhatsApp groups; a chat bridge for fast, collaborative agent workflows. https://github.com/makash/clawdwa
+9. **Great Web Copy** — Claude Code plugin to generate high-converting website copy using structured copywriting frameworks. https://github.com/makash/great-web-copy
+10. **PMF Plugin** — Plugin-oriented toolkit focused on product-market-fit validation workflows. https://github.com/makash/pmf-plugin
+
+### Education & Community
+11. **Learn Claude Code Workbook** — Hands-on guides for founders and engineers to become productive with Claude Code. https://github.com/makash/learn-claude-code
+12. **Pentester to AI Red Teamer** — Training platform and curriculum to help traditional pentesters transition into AI red teaming. https://github.com/appsecco/pentester-to-ai-red-teamer
+13. **AI Security Knowledge Base** — Structured knowledge base of Appsecco methodologies for AI and application security testing. https://github.com/appsecco/appsecco-ai-security-kb
+14. **Cloud Security List** — Curated resource hub for cloud security engineers, tools, and practical references. https://github.com/makash/cloud-security-list
+15. **Learn Kannada Alphabet** — Offline-ready educational PWA for early learners to practice Kannada alphabet basics. https://github.com/makash/learn-kannada-alphabet-for-kids
+16. **Scam Calls India** — Public awareness and data project documenting patterns in scam calls in India. https://github.com/makash/scam-calls-india
+
+## Contact
+
+- Website contact form: https://akashm.dev/#contact
+- X/Twitter: https://x.com/makash
+- GitHub: https://github.com/makash
+- LinkedIn: https://www.linkedin.com/in/akashm/
+- YouTube: https://www.youtube.com/@makash
+
+## Machine-Readable Data
+
+- Projects JSON: https://akashm.dev/api/projects.json
+- RSS feed: https://akashm.dev/rss.xml
+- Security policy: https://akashm.dev/.well-known/security.txt

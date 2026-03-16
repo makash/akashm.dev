@@ -1,0 +1,96 @@
+---
+import { companies } from '../data/projects';
+---
+
+<section class="companies" id="companies">
+  <div class="companies-inner">
+    <p class="section-label reveal">Companies</p>
+    <h2 class="companies-heading reveal reveal-d1">Two companies, one mission:<br />make security actually work.</h2>
+
+    <div class="company-grid">
+      <a href={companies.kloudle.url} target="_blank" rel="noopener" class="company-card reveal reveal-d2">
+        <div class="company-top">
+          <span class="company-name">{companies.kloudle.name}</span>
+          <span class="company-role">{companies.kloudle.role}</span>
+        </div>
+        <p class="company-desc">{companies.kloudle.description}</p>
+        <span class="company-link">{companies.kloudle.url?.replace('https://', '')} &nearr;</span>
+      </a>
+
+      <a href={companies.appsecco.url} target="_blank" rel="noopener" class="company-card reveal reveal-d3">
+        <div class="company-top">
+          <span class="company-name">{companies.appsecco.name}</span>
+          <span class="company-role">{companies.appsecco.role}</span>
+        </div>
+        <p class="company-desc">{companies.appsecco.description}</p>
+        <span class="company-link">{companies.appsecco.url?.replace('https://', '')} &nearr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .companies { padding: 6rem var(--gutter); }
+
+  .companies-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .companies-heading {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    margin-bottom: 3rem;
+    color: var(--color-text);
+    max-width: 40rem;
+  }
+
+  .company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+  }
+
+  .company-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 2.5rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: background 0.15s ease;
+  }
+  .company-card:hover { background: var(--color-surface-hover); color: var(--color-text); }
+
+  .company-top { display: flex; align-items: baseline; gap: 0.75rem; }
+
+  .company-name {
+    font-family: var(--font-display), Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .company-role {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .company-desc {
+    font-size: 1rem;
+    color: var(--color-text-dim);
+    line-height: 1.75;
+    flex: 1;
+  }
+
+  .company-link {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-dim);
+    opacity: 0.5;
+    transition: all 0.15s;
+  }
+  .company-card:hover .company-link { opacity: 1; color: var(--color-accent); }
+</style>

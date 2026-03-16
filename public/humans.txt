@@ -1,0 +1,16 @@
+/* TEAM */
+Name: Akash Mahajan
+Role: Builder
+Site: https://akashm.dev
+X: https://x.com/makash
+GitHub: https://github.com/makash
+Location: India
+
+/* SITE */
+Stack: Astro 6, Cloudflare Workers, D1
+Fonts: DM Serif Display, Outfit, IBM Plex Mono
+Last update: 2026-03-16
+
+/* THANKS */
+Astro — https://astro.build
+Cloudflare — https://cloudflare.com

@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Now — Akash Mahajan"
+  description="What Akash Mahajan is focused on right now."
+  canonicalPath="/now"
+>
+  <section class="now">
+    <div class="now-inner">
+      <p class="section-label reveal">Now</p>
+
+      <h1 class="now-title reveal reveal-d1">What I'm doing now</h1>
+      <p class="now-updated reveal reveal-d2">Last updated: March 2026</p>
+
+      <div class="now-body reveal reveal-d2">
+        <h2>Building</h2>
+        <ul>
+          <li>Shipping the Kloudle Agent Security Platform — cloud security scanning designed for teams using AI agents in production.</li>
+          <li>Growing the SPA Hacker Agent into a comprehensive browser-based security testing toolkit.</li>
+          <li>Building ccrank.dev — the public leaderboard for Claude Code usage analytics.</li>
+        </ul>
+
+        <h2>Learning</h2>
+        <ul>
+          <li>Going deep on AI red teaming methodologies and building training material for Appsecco's "Pentester to AI Red Teamer" program.</li>
+          <li>Exploring MCP (Model Context Protocol) security implications — what happens when agents get tool access.</li>
+        </ul>
+
+        <h2>Writing</h2>
+        <ul>
+          <li>Documenting build logs and security insights — bringing all my writing to akashm.dev.</li>
+        </ul>
+      </div>
+
+      <p class="now-inspired reveal reveal-d3">
+        This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener">/now page</a>.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .now { padding: 10rem var(--gutter) 4rem; }
+
+  .now-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+  }
+
+  .now-title {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .now-updated {
+    font-family: var(--font-mono), monospace;
+    font-size: 0.8rem;
+    color: var(--color-text-dim);
+    margin-bottom: 3rem;
+  }
+
+  .now-body {
+    max-width: 38rem;
+  }
+
+  .now-body h2 {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .now-body h2:first-child { margin-top: 0; }
+
+  .now-body ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .now-body li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: var(--color-text-dim);
+    line-height: 1.75;
+  }
+
+  .now-body li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    opacity: 0.6;
+  }
+
+  .now-inspired {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--color-text-dim);
+    opacity: 0.5;
+  }
+</style>

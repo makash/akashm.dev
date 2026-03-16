@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0C0C0C"/>
+  <rect x="60" y="60" width="1080" height="510" rx="16" fill="#161616" stroke="#2E2E2E" stroke-width="1"/>
+  <text x="120" y="200" font-family="Georgia, serif" font-size="72" fill="#EDEDED" font-weight="400">Akash Mahajan</text>
+  <text x="120" y="290" font-family="monospace" font-size="28" fill="#E8603C" letter-spacing="3">BUILDER &middot; SECURITY &middot; AI AGENTS</text>
+  <text x="120" y="380" font-family="system-ui, sans-serif" font-size="28" fill="#8B8B8B" font-weight="300">Founder of Kloudle and Appsecco.</text>
+  <text x="120" y="420" font-family="system-ui, sans-serif" font-size="28" fill="#8B8B8B" font-weight="300">16 active projects. Shipping in the open.</text>
+  <text x="120" y="510" font-family="monospace" font-size="22" fill="#E8603C" opacity="0.6">akashm.dev</text>
+  <rect x="1020" y="100" width="60" height="60" rx="8" fill="none" stroke="#E8603C" stroke-width="2"/>
+  <text x="1050" y="140" text-anchor="middle" font-family="monospace" font-size="24" fill="#E8603C" font-weight="700">AM</text>
+</svg>

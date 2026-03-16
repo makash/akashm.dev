@@ -1,0 +1,9 @@
+# Security Policy for akashm.dev
+# https://securitytxt.org/ (RFC 9116)
+
+Contact: https://akashm.dev/#contact
+Contact: https://x.com/makash
+Expires: 2027-03-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://akashm.dev/.well-known/security.txt
+Policy: https://akashm.dev/security-policy

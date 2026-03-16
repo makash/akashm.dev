@@ -1,0 +1,151 @@
+{
+  "owner": "Akash Mahajan",
+  "generated_at": "2026-03-16T19:30:00+05:30",
+  "intended_use": "Data source for akashm.dev",
+  "projects": [
+    {
+      "name": "ccrank.dev",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/claude-leaderboard-using-ccusage",
+      "repo_path": "/Users/mainstreet/code/ccrank-dev",
+      "description": "Leaderboard and analytics for Claude Code usage, with a live public scoreboard at ccrank.dev.",
+      "tags": ["claude-code", "analytics", "leaderboard", "cloudflare"]
+    },
+    {
+      "name": "SPA Hacker Agent",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/spa-hacking-agent",
+      "repo_path": "/Users/mainstreet/code/spa-hacker/spa-hacker-agent",
+      "description": "Agent-driven SPA security scanner with browser automation, recon workflows, and exploit validation.",
+      "tags": ["security", "agent", "spa", "playwright", "pentesting"]
+    },
+    {
+      "name": "clawdwa",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/clawdwa",
+      "repo_path": "/Users/mainstreet/code/testing-clawdwa/clawdwa",
+      "description": "Use Claude from WhatsApp groups; a chat bridge for fast, collaborative agent workflows.",
+      "tags": ["whatsapp", "claude", "automation", "agent-ops"]
+    },
+    {
+      "name": "Learn Claude Code Workbook",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/learn-claude-code",
+      "repo_path": "/Users/mainstreet/code/learn-claude-code-using-workbook",
+      "description": "Hands-on guides for founders and engineers to become productive with Claude Code.",
+      "tags": ["education", "claude-code", "workbook", "developer-productivity"]
+    },
+    {
+      "name": "Great Web Copy",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/great-web-copy",
+      "repo_path": "/Users/mainstreet/code/great-web-copy",
+      "description": "Claude Code plugin to generate high-converting website copy using structured copywriting frameworks.",
+      "tags": ["copywriting", "plugin", "conversion", "marketing"]
+    },
+    {
+      "name": "PMF Plugin",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/pmf-plugin",
+      "repo_path": "/Users/mainstreet/code/pmf-plugin",
+      "description": "Plugin-oriented toolkit focused on product-market-fit validation workflows.",
+      "tags": ["pmf", "product-strategy", "plugin", "founder-tools"]
+    },
+    {
+      "name": "Cloud Security List",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/cloud-security-list",
+      "repo_path": "/Users/mainstreet/code/marketing-code/cloud-security-list",
+      "description": "Curated resource hub for cloud security engineers, tools, and practical references.",
+      "tags": ["cloud-security", "curation", "community", "resources"]
+    },
+    {
+      "name": "Learn Kannada Alphabet for Kids",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/learn-kannada-alphabet-for-kids",
+      "repo_path": "/Users/mainstreet/code/kannada-english-hindi-alphabet",
+      "description": "Offline-ready educational PWA for early learners to practice Kannada alphabet basics.",
+      "tags": ["education", "pwa", "kids", "language-learning"]
+    },
+    {
+      "name": "Scam Calls India",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/scam-calls-india",
+      "repo_path": "/Users/mainstreet/code/scam-calls-india",
+      "description": "Public awareness and data project documenting patterns in scam calls in India.",
+      "tags": ["security-awareness", "osint", "community"]
+    },
+    {
+      "name": "OpenClaw One-Click Secure Setup",
+      "company": "personal",
+      "status": "active",
+      "github_url": "https://github.com/makash/getbot-secure-openclaw",
+      "repo_path": "/Users/mainstreet/code/secure-openclaw-in-one-click",
+      "description": "Opinionated security hardening and deployment flow for running OpenClaw quickly and safely.",
+      "tags": ["security", "openclaw", "devops", "automation"]
+    },
+    {
+      "name": "Kloudle Scan",
+      "company": "kloudle",
+      "status": "active",
+      "github_url": "https://github.com/Kloudle/kloudle-scan",
+      "repo_path": "/Users/mainstreet/code/kloudle-scan",
+      "description": "Cloud security posture scanning tooling adapted for modern cloud and agentic workflows.",
+      "tags": ["kloudle", "cloud-security", "scanner", "cspm"]
+    },
+    {
+      "name": "Kloudle Agent Security Platform (private services)",
+      "company": "kloudle",
+      "status": "active",
+      "github_url": null,
+      "repo_path": "/Users/mainstreet/code/kloudle-2026",
+      "description": "Private set of backend/frontend services for Kloudle's agent-era security platform (scan, detector, data, reporting).",
+      "tags": ["kloudle", "private", "platform", "agent-security"]
+    },
+    {
+      "name": "Appsecco Web Security Scanner AI Agent",
+      "company": "appsecco",
+      "status": "active",
+      "github_url": "https://github.com/appsecco/appsecco-web-security-scanner-ai-agent",
+      "repo_path": "/Users/mainstreet/code/appsecco/appsecco-web-security-scanner-ai-agent",
+      "description": "AI-assisted web application security scanner focused on practical recon, analysis, and testing.",
+      "tags": ["appsecco", "security", "ai-agent", "scanner"]
+    },
+    {
+      "name": "Appsecco AI Security Knowledge Base",
+      "company": "appsecco",
+      "status": "active",
+      "github_url": "https://github.com/appsecco/appsecco-ai-security-kb",
+      "repo_path": "/Users/mainstreet/code/appsecco/appsecco-ai-security-kb",
+      "description": "Structured knowledge base of Appsecco methodologies for AI and application security testing.",
+      "tags": ["appsecco", "knowledge-base", "security", "documentation"]
+    },
+    {
+      "name": "Pentester to AI Red Teamer",
+      "company": "appsecco",
+      "status": "active",
+      "github_url": "https://github.com/appsecco/pentester-to-ai-red-teamer",
+      "repo_path": "/Users/mainstreet/code/pentester-to-ai-red-teamer",
+      "description": "Training platform and curriculum to help traditional pentesters transition into AI red teaming.",
+      "tags": ["appsecco", "training", "ai-red-teaming", "education"]
+    },
+    {
+      "name": "Appsecco MCP Client and Proxy",
+      "company": "appsecco",
+      "status": "active",
+      "github_url": null,
+      "repo_path": "/Users/mainstreet/code/appsecco/appsecco-mcp-client-and-proxy",
+      "description": "MCP proxy/client tooling for routing and inspecting MCP server traffic during security testing.",
+      "tags": ["appsecco", "mcp", "security", "proxy", "private"]
+    }
+  ]
+}

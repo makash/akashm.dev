@@ -1,0 +1,136 @@
+---
+import { projects } from '../data/projects';
+
+const companyLabel: Record<string, string> = {
+  personal: 'Personal',
+  kloudle: 'Kloudle',
+  appsecco: 'Appsecco',
+};
+---
+
+<section class="projects" id="projects">
+  <div class="projects-inner">
+    <p class="section-label reveal">Projects</p>
+    <h2 class="projects-heading reveal reveal-d1">{projects.length} things I'm building right now</h2>
+    <p class="projects-sub reveal reveal-d2">Security tools, AI agents, developer productivity, education, and community projects.</p>
+
+    <div class="project-grid">
+      {projects.map((project, i) => {
+        const Tag = project.url ? 'a' : 'div';
+        return (
+          <Tag
+            href={project.url || undefined}
+            target={project.url ? '_blank' : undefined}
+            rel={project.url ? 'noopener' : undefined}
+            class={`project-card reveal reveal-d${Math.min((i % 3) + 1, 3)}`}
+          >
+            <div class="project-header">
+              <h3 class="project-name">{project.name}</h3>
+              <span class="project-company">{companyLabel[project.company]}</span>
+            </div>
+            <p class="project-desc">{project.description}</p>
+            <div class="project-tags">
+              {project.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+              {!project.url && <span class="tag tag-private">private</span>}
+            </div>
+          </Tag>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects { padding: 6rem var(--gutter); }
+
+  .projects-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .projects-heading {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+
+  .projects-sub {
+    font-size: 1rem;
+    color: var(--color-text-dim);
+    margin-bottom: 3rem;
+    max-width: 40rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.75rem 2rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: background 0.15s ease;
+    text-decoration: none;
+  }
+  .project-card:hover { background: var(--color-surface-hover); color: var(--color-text); }
+  a.project-card { cursor: pointer; }
+
+  .project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .project-name {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .project-company {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--color-text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .project-desc {
+    font-size: 0.925rem;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+  .tag {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    background: var(--color-tag-bg);
+    color: var(--color-tag-text);
+    letter-spacing: 0.01em;
+  }
+
+  .tag-private {
+    background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 640px) {
+    .project-grid { grid-template-columns: 1fr; }
+  }
+</style>

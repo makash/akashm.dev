@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# AI Search & Retrieval Bots — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://akashm.dev/sitemap-index.xml
+
+# Machine-readable resources for AI agents
+# Summary: https://akashm.dev/llms.txt
+# Full context: https://akashm.dev/llms-full.txt
+# Projects API: https://akashm.dev/api/projects.json
+# Security: https://akashm.dev/.well-known/security.txt
