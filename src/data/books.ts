@@ -64,4 +64,10 @@ export const newsletters = [
     url: 'https://securitymutiny.substack.com/',
     description: 'AI agent security — what breaks, what matters.',
   },
+  {
+    title: 'Akash in Beta',
+    platform: 'Substack',
+    url: 'https://akashinbeta.substack.com/',
+    description: 'Building in public — shipping, learning, writing about it.',
+  },
 ];

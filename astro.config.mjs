@@ -19,10 +19,10 @@ export default defineConfig({
     },
     {
       provider: fontProviders.google(),
-      name: 'Plus Jakarta Sans',
+      name: 'Instrument Sans',
       cssVariable: '--font-sans',
-      weights: [300, 400, 500, 600, 700],
-      styles: ['normal'],
+      weights: [400, 500, 600, 700],
+      styles: ['normal', 'italic'],
       subsets: ['latin'],
     },
     {

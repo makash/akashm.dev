@@ -261,7 +261,7 @@ export const companies = {
   appsecco: {
     name: 'Appsecco',
     role: 'Founder',
-    description: 'Application security consulting and training. From pentesting to AI red teaming — helping teams find and fix what matters.',
+    description: 'Product security testing for teams that ship. We test apps, APIs, cloud infrastructure, and AI integrations — then deliver a report your engineering team can act on.',
     url: 'https://appsecco.com',
   },
 } as const;
