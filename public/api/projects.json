@@ -1,35 +1,267 @@
 {
   "owner": "Akash Mahajan",
-  "site": "https://akashm.dev",
-  "updated_at": "2026-03-16",
-  "companies": {
-    "kloudle": {
-      "name": "Kloudle",
-      "url": "https://kloudle.com",
-      "description": "Cloud security for the agent era. Scanning, detection, and posture management."
-    },
-    "appsecco": {
-      "name": "Appsecco",
-      "url": "https://appsecco.com",
-      "description": "Application security consulting and training. From pentesting to AI red teaming."
-    }
-  },
+  "generated_at": "2026-03-16T21:05:00+05:30",
+  "intended_use": "Data source for akashm.dev (synced with github.com/makash/makash README)",
   "projects": [
-    { "name": "ccrank.dev", "company": "personal", "url": "https://github.com/makash/claude-leaderboard-using-ccusage", "tags": ["claude-code", "analytics", "cloudflare"] },
-    { "name": "SPA Hacker Agent", "company": "personal", "url": "https://github.com/makash/spa-hacking-agent", "tags": ["security", "agent", "pentesting"] },
-    { "name": "clawdwa", "company": "personal", "url": "https://github.com/makash/clawdwa", "tags": ["whatsapp", "claude", "agent-ops"] },
-    { "name": "Learn Claude Code Workbook", "company": "personal", "url": "https://github.com/makash/learn-claude-code", "tags": ["education", "claude-code", "workbook"] },
-    { "name": "Great Web Copy", "company": "personal", "url": "https://github.com/makash/great-web-copy", "tags": ["copywriting", "plugin", "marketing"] },
-    { "name": "PMF Plugin", "company": "personal", "url": "https://github.com/makash/pmf-plugin", "tags": ["pmf", "product-strategy", "founder-tools"] },
-    { "name": "Cloud Security List", "company": "personal", "url": "https://github.com/makash/cloud-security-list", "tags": ["cloud-security", "curation", "community"] },
-    { "name": "Learn Kannada Alphabet", "company": "personal", "url": "https://github.com/makash/learn-kannada-alphabet-for-kids", "tags": ["education", "pwa", "language-learning"] },
-    { "name": "Scam Calls India", "company": "personal", "url": "https://github.com/makash/scam-calls-india", "tags": ["security-awareness", "osint", "community"] },
-    { "name": "OpenClaw Secure Setup", "company": "personal", "url": "https://github.com/makash/getbot-secure-openclaw", "tags": ["security", "devops", "automation"] },
-    { "name": "Kloudle Scan", "company": "kloudle", "url": "https://github.com/Kloudle/kloudle-scan", "tags": ["cloud-security", "scanner", "cspm"] },
-    { "name": "Kloudle Agent Security Platform", "company": "kloudle", "url": null, "tags": ["platform", "agent-security", "private"] },
-    { "name": "Web Security Scanner AI Agent", "company": "appsecco", "url": "https://github.com/appsecco/appsecco-web-security-scanner-ai-agent", "tags": ["security", "ai-agent", "scanner"] },
-    { "name": "AI Security Knowledge Base", "company": "appsecco", "url": "https://github.com/appsecco/appsecco-ai-security-kb", "tags": ["knowledge-base", "security", "documentation"] },
-    { "name": "Pentester to AI Red Teamer", "company": "appsecco", "url": "https://github.com/appsecco/pentester-to-ai-red-teamer", "tags": ["training", "ai-red-teaming", "education"] },
-    { "name": "MCP Client & Proxy", "company": "appsecco", "url": null, "tags": ["mcp", "security", "proxy", "private"] }
+    {
+      "name": "indus-claw",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": "https://github.com/makash/indus-claw",
+      "description": "India-centric open-source AI agent platform.",
+      "tags": ["agents", "platform", "india", "open-source"]
+    },
+    {
+      "name": "Getbot Secure OpenClaw",
+      "company": "personal",
+      "visibility": "private",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": null,
+      "description": "Deploy and harden customer-contained agent fleets.",
+      "tags": ["openclaw", "deployment", "hardening", "agents"]
+    },
+    {
+      "name": "SPA Hacker Agent",
+      "company": "personal",
+      "visibility": "private",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": null,
+      "description": "Product security worker for authenticated SPA attack-surface mapping and testing.",
+      "tags": ["spa", "product-security", "agent", "testing"]
+    },
+    {
+      "name": "SSRF/AuthZ Security Suite",
+      "company": "personal",
+      "visibility": "private",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": null,
+      "description": "Authz probing and SSRF-safe testing workflows.",
+      "tags": ["ssrf", "authz", "security", "suite"]
+    },
+    {
+      "name": "Kloudle Scan Core",
+      "company": "kloudle",
+      "visibility": "private",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": null,
+      "description": "Cloud security scanning engine for agent workflows.",
+      "tags": ["kloudle", "cloud-security", "scanner"]
+    },
+    {
+      "name": "Appsecco Web Security Scanner AI Agent",
+      "company": "appsecco",
+      "visibility": "private",
+      "status": "active",
+      "category": "agentic-security-stack",
+      "github_url": null,
+      "description": "AI-assisted web application security scanner.",
+      "tags": ["appsecco", "web-security", "ai-agent"]
+    },
+    {
+      "name": "ccrank",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/ccrank",
+      "description": "Claude Code usage leaderboard and analytics.",
+      "tags": ["claude-code", "analytics", "leaderboard"]
+    },
+    {
+      "name": "agent-browser",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/agent-browser",
+      "description": "Stealth browser automation CLI for security and agent workflows.",
+      "tags": ["browser-automation", "stealth", "cli", "agents"]
+    },
+    {
+      "name": "oxydra",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/oxydra",
+      "description": "Many-heads agent experimentation framework.",
+      "tags": ["agents", "framework", "experiments"]
+    },
+    {
+      "name": "clawdwa",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/clawdwa",
+      "description": "Use Claude from WhatsApp groups.",
+      "tags": ["claude", "whatsapp", "automation"]
+    },
+    {
+      "name": "great-web-copy",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/great-web-copy",
+      "description": "Copywriting plugin for Claude Code.",
+      "tags": ["copywriting", "plugin", "claude-code"]
+    },
+    {
+      "name": "pmf-plugin",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "agent-developer-tools",
+      "github_url": "https://github.com/makash/pmf-plugin",
+      "description": "PMF discovery and validation toolkit.",
+      "tags": ["pmf", "product", "validation"]
+    },
+    {
+      "name": "vulnerable-mcp-servers-lab",
+      "company": "appsecco",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/appsecco/vulnerable-mcp-servers-lab",
+      "description": "Deliberately vulnerable MCP servers for offensive and defensive training.",
+      "tags": ["appsecco", "mcp", "security-lab", "training"]
+    },
+    {
+      "name": "pentesting-mcp-servers-checklist",
+      "company": "appsecco",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/appsecco/pentesting-mcp-servers-checklist",
+      "description": "Practical checklist for testing MCP server security.",
+      "tags": ["appsecco", "mcp", "checklist", "pentesting"]
+    },
+    {
+      "name": "mcp-client-and-proxy",
+      "company": "appsecco",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/appsecco/mcp-client-and-proxy",
+      "description": "MCP client with proxying for traffic analysis and security testing.",
+      "tags": ["appsecco", "mcp", "proxy", "tooling"]
+    },
+    {
+      "name": "raptor",
+      "company": "appsecco",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/appsecco/raptor",
+      "description": "Claude Code configured for adversarial security workflows.",
+      "tags": ["appsecco", "claude", "security", "agents"]
+    },
+    {
+      "name": "aws-iam-large-account-security",
+      "company": "kloudle",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/Kloudle/aws-iam-large-account-security",
+      "description": "IAM security insights for very large AWS accounts.",
+      "tags": ["kloudle", "aws", "iam", "cloud-security"]
+    },
+    {
+      "name": "open-cvdb",
+      "company": "kloudle",
+      "visibility": "public",
+      "status": "active",
+      "category": "open-source-appsecco-kloudle",
+      "github_url": "https://github.com/Kloudle/open-cvdb",
+      "description": "Open cloud vulnerability and misconfiguration database.",
+      "tags": ["kloudle", "vulnerability-db", "cloud-security"]
+    },
+    {
+      "name": "Pentester to AI Red Teamer",
+      "company": "appsecco",
+      "visibility": "private",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": null,
+      "description": "Training platform for AI red teaming.",
+      "tags": ["training", "appsecco", "ai-red-teaming"]
+    },
+    {
+      "name": "learn-claude-code",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": "https://github.com/makash/learn-claude-code",
+      "description": "Practical workbooks for founders and engineers.",
+      "tags": ["education", "claude-code", "workbook"]
+    },
+    {
+      "name": "AI Security Knowledge Base",
+      "company": "appsecco",
+      "visibility": "private",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": null,
+      "description": "Appsec and AI security methodology knowledge base.",
+      "tags": ["appsecco", "knowledge-base", "security"]
+    },
+    {
+      "name": "cloud-security-list",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": "https://github.com/makash/cloud-security-list",
+      "description": "Curated cloud security resources.",
+      "tags": ["cloud-security", "resources", "community"]
+    },
+    {
+      "name": "Grandoldbooks-to-epub",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": "https://github.com/makash/Grandoldbooks-to-epub",
+      "description": "Generate EPUB books from public-domain classics.",
+      "tags": ["ebooks", "epub", "automation"]
+    },
+    {
+      "name": "learn-kannada-alphabet-for-kids",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": "https://github.com/makash/learn-kannada-alphabet-for-kids",
+      "description": "Offline-ready PWA for kids learning Kannada alphabet.",
+      "tags": ["education", "pwa", "kids"]
+    },
+    {
+      "name": "scam-calls-india",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "education-research-community",
+      "github_url": "https://github.com/makash/scam-calls-india",
+      "description": "Public awareness project tracking scam call patterns.",
+      "tags": ["awareness", "security", "community"]
+    },
+    {
+      "name": "akashm.dev",
+      "company": "personal",
+      "visibility": "public",
+      "status": "active",
+      "category": "websites",
+      "github_url": "https://github.com/makash/akashm.dev",
+      "description": "Personal website and project hub.",
+      "tags": ["website", "portfolio"]
+    }
   ]
 }

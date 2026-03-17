@@ -1,13 +1,13 @@
 # Akash Mahajan — Full Context
 
-> Founder of Kloudle and Appsecco. Building security tools, AI agents, and open-source projects.
+> Founder of Kloudle and Appsecco. Building security tools, AI agents, and shipping in the open.
 > Website: https://akashm.dev | X: @makash | GitHub: makash
 
 ## Identity
 
 - Name: Akash Mahajan
 - Location: India
-- Focus areas: Cloud security, application security, AI agents, developer tools, education
+- Focus areas: Agentic security, cloud security, application security, AI agents, developer tools, education
 - Handles: @makash (X, GitHub, YouTube), /in/akashm (LinkedIn)
 - Personal site: https://akashm.dev
 
@@ -15,35 +15,59 @@
 
 ### Kloudle (https://kloudle.com)
 Role: Founder
-Cloud security for the agent era. Scanning, detection, and posture management built for teams shipping with AI agents. Products include Kloudle Scan (open-source CSPM tooling) and the Kloudle Agent Security Platform (private SaaS).
+Cloud security for the agent era. Scanning, detection, and posture management built for teams shipping with AI agents.
 
 ### Appsecco (https://appsecco.com)
 Role: Founder
-Application security consulting and training company. Services range from traditional penetration testing to AI red teaming. Builds AI-powered security tools and maintains open-source security knowledge bases. Training programs help pentesters transition into AI security roles.
+Application security consulting and training. From traditional pentesting to AI red teaming.
 
-## Active Projects (16 total)
+## Books
 
-### Security Tools
-1. **SPA Hacker Agent** — Agent-driven single-page application security scanner with browser automation, recon workflows, and exploit validation. Uses Playwright for browser-based testing. https://github.com/makash/spa-hacking-agent
-2. **Kloudle Scan** — Cloud security posture scanning tooling adapted for modern cloud and agentic workflows. Open-source CSPM. https://github.com/Kloudle/kloudle-scan
-3. **Kloudle Agent Security Platform** — Private backend/frontend services for Kloudle's agent-era security platform covering scan, detection, data analysis, and reporting.
-4. **Web Security Scanner AI Agent** — AI-assisted web application security scanner focused on practical recon, analysis, and testing. https://github.com/appsecco/appsecco-web-security-scanner-ai-agent
-5. **MCP Client & Proxy** — MCP proxy/client tooling for routing and inspecting MCP server traffic during security testing. Private.
-6. **OpenClaw Secure Setup** — Opinionated security hardening and deployment flow for running OpenClaw quickly and safely. https://github.com/makash/getbot-secure-openclaw
+1. **Burp Suite Essentials** (Packt, 2014) — Sole author. Practical guide to Burp Suite for web pentesting. Recommended by PortSwigger.
+2. **Security Automation with Ansible 2** (Packt, 2017) — Co-authored with Madhu Akula. Security automation for patching, hardening, scanning, and forensics.
 
-### AI Agent & Developer Tools
-7. **ccrank.dev** — Leaderboard and analytics for Claude Code usage, with a live public scoreboard. https://github.com/makash/claude-leaderboard-using-ccusage
-8. **clawdwa** — Use Claude from WhatsApp groups; a chat bridge for fast, collaborative agent workflows. https://github.com/makash/clawdwa
-9. **Great Web Copy** — Claude Code plugin to generate high-converting website copy using structured copywriting frameworks. https://github.com/makash/great-web-copy
-10. **PMF Plugin** — Plugin-oriented toolkit focused on product-market-fit validation workflows. https://github.com/makash/pmf-plugin
+## Newsletters
 
-### Education & Community
-11. **Learn Claude Code Workbook** — Hands-on guides for founders and engineers to become productive with Claude Code. https://github.com/makash/learn-claude-code
-12. **Pentester to AI Red Teamer** — Training platform and curriculum to help traditional pentesters transition into AI red teaming. https://github.com/appsecco/pentester-to-ai-red-teamer
-13. **AI Security Knowledge Base** — Structured knowledge base of Appsecco methodologies for AI and application security testing. https://github.com/appsecco/appsecco-ai-security-kb
-14. **Cloud Security List** — Curated resource hub for cloud security engineers, tools, and practical references. https://github.com/makash/cloud-security-list
-15. **Learn Kannada Alphabet** — Offline-ready educational PWA for early learners to practice Kannada alphabet basics. https://github.com/makash/learn-kannada-alphabet-for-kids
-16. **Scam Calls India** — Public awareness and data project documenting patterns in scam calls in India. https://github.com/makash/scam-calls-india
+- Cloud Security Mutiny (Substack) — No-BS cloud security strategies for small teams
+- Agentic Security Brief (Substack) — AI agent security
+
+## Active Projects (26 total)
+
+### Agentic Security Stack
+1. **IndusClaw** — India-centric open-source AI agent platform. https://github.com/makash/indus-claw
+2. **Getbot Secure OpenClaw** — Deploy and harden customer-contained agent fleets. (private)
+3. **SPA Hacker Agent** — Product security worker for authenticated SPA attack-surface mapping and testing. (private)
+4. **SSRF/AuthZ Security Suite** — Authz probing and SSRF-safe testing workflows. (private)
+5. **Kloudle Scan Core** — Cloud security scanning engine for agent workflows. (private)
+6. **Web Security Scanner AI Agent** — AI-assisted web application security scanner. (private)
+
+### Agent & Developer Tools
+7. **ccrank** — Claude Code usage leaderboard and analytics. https://github.com/makash/ccrank
+8. **agent-browser** — Stealth browser automation CLI for security and agent workflows. https://github.com/makash/agent-browser
+9. **oxydra** — Many-heads agent experimentation framework. https://github.com/makash/oxydra
+10. **clawdwa** — Use Claude from WhatsApp groups. https://github.com/makash/clawdwa
+11. **great-web-copy** — Copywriting plugin for Claude Code. https://github.com/makash/great-web-copy
+12. **pmf-plugin** — PMF discovery and validation toolkit. https://github.com/makash/pmf-plugin
+
+### Open Source — Appsecco & Kloudle
+13. **Vulnerable MCP Servers Lab** — Deliberately vulnerable MCP servers for offensive and defensive training. https://github.com/appsecco/vulnerable-mcp-servers-lab
+14. **Pentesting MCP Servers Checklist** — Practical checklist for testing MCP server security. https://github.com/appsecco/pentesting-mcp-servers-checklist
+15. **MCP Client & Proxy** — MCP client with proxying for traffic analysis and security testing. https://github.com/appsecco/mcp-client-and-proxy
+16. **Raptor** — Claude Code configured for adversarial security workflows. https://github.com/appsecco/raptor
+17. **AWS IAM Large Account Security** — IAM security insights for very large AWS accounts. https://github.com/Kloudle/aws-iam-large-account-security
+18. **Open CVDB** — Open cloud vulnerability and misconfiguration database. https://github.com/Kloudle/open-cvdb
+
+### Education, Research & Community
+19. **Pentester to AI Red Teamer** — Training platform for AI red teaming. (private)
+20. **Learn Claude Code** — Practical workbooks for founders and engineers. https://github.com/makash/learn-claude-code
+21. **AI Security Knowledge Base** — Appsec and AI security methodology knowledge base. (private)
+22. **Cloud Security List** — Curated cloud security resources. https://github.com/makash/cloud-security-list
+23. **Grandoldbooks to EPUB** — Generate EPUB books from public-domain classics. https://github.com/makash/Grandoldbooks-to-epub
+24. **Learn Kannada Alphabet** — Offline-ready PWA for kids learning Kannada alphabet. https://github.com/makash/learn-kannada-alphabet-for-kids
+25. **Scam Calls India** — Public awareness project tracking scam call patterns. https://github.com/makash/scam-calls-india
+
+### Websites
+26. **akashm.dev** — Personal website and project hub. https://github.com/makash/akashm.dev
 
 ## Contact
 
@@ -56,5 +80,4 @@ Application security consulting and training company. Services range from tradit
 ## Machine-Readable Data
 
 - Projects JSON: https://akashm.dev/api/projects.json
-- RSS feed: https://akashm.dev/rss.xml
 - Security policy: https://akashm.dev/.well-known/security.txt

@@ -2,7 +2,7 @@
 
 > Founder of Kloudle and Appsecco. Security practitioner and builder. Creating cloud security tools, AI agents, and open-source projects.
 
-Akash Mahajan runs two security companies and maintains over a dozen open-source projects focused on cloud security, AI agent tooling, and security education. Based in India.
+Akash Mahajan runs two security companies and maintains 26+ active projects focused on agentic security, AI agent tooling, and security education. Based in India.
 
 For full context including all project descriptions, see [llms-full.txt](https://akashm.dev/llms-full.txt).
 
@@ -10,18 +10,23 @@ For full context including all project descriptions, see [llms-full.txt](https:/
 
 - [About](https://akashm.dev/about): Background, philosophy, and contact links
 - [Now](https://akashm.dev/now): What Akash is currently focused on
+- [Books](https://akashm.dev/books): Published books and newsletters
 - [Projects JSON](https://akashm.dev/api/projects.json): Machine-readable project data
 - [Kloudle](https://kloudle.com): Cloud security posture management for the agent era
 - [Appsecco](https://appsecco.com): Application security consulting and training
 
 ## Projects
 
-- [Kloudle Scan](https://github.com/Kloudle/kloudle-scan): Open-source cloud security posture scanning
-- [Web Security Scanner AI Agent](https://github.com/appsecco/appsecco-web-security-scanner-ai-agent): AI-assisted web application security scanner
-- [AI Security Knowledge Base](https://github.com/appsecco/appsecco-ai-security-kb): Structured methodologies for AI and appsec testing
-- [Pentester to AI Red Teamer](https://github.com/appsecco/pentester-to-ai-red-teamer): Training for pentesters transitioning to AI red teaming
-- [SPA Hacker Agent](https://github.com/makash/spa-hacking-agent): Agent-driven SPA security scanner
-- [ccrank.dev](https://github.com/makash/claude-leaderboard-using-ccusage): Claude Code usage leaderboard and analytics
+- [IndusClaw](https://github.com/makash/indus-claw): India-centric open-source AI agent platform
+- [ccrank](https://github.com/makash/ccrank): Claude Code usage leaderboard and analytics
+- [agent-browser](https://github.com/makash/agent-browser): Stealth browser automation CLI for security and agent workflows
+- [oxydra](https://github.com/makash/oxydra): Many-heads agent experimentation framework
+- [Vulnerable MCP Servers Lab](https://github.com/appsecco/vulnerable-mcp-servers-lab): Deliberately vulnerable MCP servers for training
+- [Pentesting MCP Servers Checklist](https://github.com/appsecco/pentesting-mcp-servers-checklist): Practical checklist for MCP server security
+- [MCP Client & Proxy](https://github.com/appsecco/mcp-client-and-proxy): MCP client with proxying for security testing
+- [Raptor](https://github.com/appsecco/raptor): Claude Code configured for adversarial security workflows
+- [Open CVDB](https://github.com/Kloudle/open-cvdb): Open cloud vulnerability and misconfiguration database
+- [AWS IAM Large Account Security](https://github.com/Kloudle/aws-iam-large-account-security): IAM security for large AWS accounts
 
 ## Contact
 
@@ -34,10 +39,10 @@ For full context including all project descriptions, see [llms-full.txt](https:/
 ## Optional
 
 - [clawdwa](https://github.com/makash/clawdwa): Claude from WhatsApp groups
-- [Learn Claude Code Workbook](https://github.com/makash/learn-claude-code): Hands-on Claude Code guides
-- [Great Web Copy](https://github.com/makash/great-web-copy): Claude Code plugin for website copy
-- [PMF Plugin](https://github.com/makash/pmf-plugin): Product-market-fit validation toolkit
+- [Learn Claude Code](https://github.com/makash/learn-claude-code): Practical workbooks for founders and engineers
+- [great-web-copy](https://github.com/makash/great-web-copy): Copywriting plugin for Claude Code
+- [pmf-plugin](https://github.com/makash/pmf-plugin): PMF discovery and validation toolkit
 - [Cloud Security List](https://github.com/makash/cloud-security-list): Curated cloud security resources
+- [Grandoldbooks to EPUB](https://github.com/makash/Grandoldbooks-to-epub): Generate EPUB books from public-domain classics
 - [Learn Kannada Alphabet](https://github.com/makash/learn-kannada-alphabet-for-kids): Educational PWA for Kannada
 - [Scam Calls India](https://github.com/makash/scam-calls-india): Scam call pattern awareness
-- [OpenClaw Secure Setup](https://github.com/makash/getbot-secure-openclaw): Security hardening for OpenClaw
