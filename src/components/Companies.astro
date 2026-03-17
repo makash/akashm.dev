@@ -5,26 +5,30 @@ import { companies } from '../data/projects';
 <section class="companies" id="companies">
   <div class="companies-inner">
     <p class="section-label reveal">Companies</p>
-    <h2 class="companies-heading reveal reveal-d1">Two companies, one mission:<br />make security actually work.</h2>
+    <h2 class="companies-heading reveal reveal-d1">Two decades of building security companies.<br />Two active right now.</h2>
 
     <div class="company-grid">
       <a href={companies.kloudle.url} target="_blank" rel="noopener" class="company-card reveal reveal-d2">
         <div class="company-top">
           <span class="company-name">{companies.kloudle.name}</span>
-          <span class="company-role">{companies.kloudle.role}</span>
+          <span class="company-role">{companies.kloudle.role} &middot; 2020</span>
         </div>
-        <p class="company-desc">{companies.kloudle.description}</p>
+        <p class="company-desc">Cloud security scanning for teams that ship with AI agents. Find and fix cloud misconfigurations before your agents do something you can't undo.</p>
         <span class="company-link">{companies.kloudle.url?.replace('https://', '')} &nearr;</span>
       </a>
 
       <a href={companies.appsecco.url} target="_blank" rel="noopener" class="company-card reveal reveal-d3">
         <div class="company-top">
           <span class="company-name">{companies.appsecco.name}</span>
-          <span class="company-role">{companies.appsecco.role}</span>
+          <span class="company-role">Co-Founder &middot; 2015</span>
         </div>
-        <p class="company-desc">{companies.appsecco.description}</p>
+        <p class="company-desc">Application security consulting that gets to the point. Pentesting, AI red teaming, and training — for teams that want real findings, not compliance theater.</p>
         <span class="company-link">{companies.appsecco.url?.replace('https://', '')} &nearr;</span>
       </a>
+    </div>
+
+    <div class="company-history reveal">
+      <p>Previously: <strong>The App Sec Lab</strong> (2008–2015), <strong>null — The Open Security Community</strong> (co-founded 2009, 6 cities across India), <strong>HeadStart Network Foundation</strong> (co-founded 2007).</p>
     </div>
   </div>
 </section>
@@ -93,4 +97,22 @@ import { companies } from '../data/projects';
     transition: all 0.15s;
   }
   .company-card:hover .company-link { opacity: 1; color: var(--color-accent); }
+
+  .company-history {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .company-history p {
+    font-size: 0.9rem;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+  }
+
+  .company-history strong {
+    color: var(--color-text);
+    font-weight: 500;
+  }
 </style>

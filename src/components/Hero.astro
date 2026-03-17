@@ -7,38 +7,43 @@ const projectCount = 26;
     <p class="section-label reveal">Akash Mahajan</p>
 
     <h1 class="hero-title reveal reveal-d1">
-      I build security tools<br />
-      <span class="hero-accent">that people actually use.</span>
+      Security for AI.<br />
+      <span class="hero-accent">Secure infra for agents.</span>
     </h1>
 
     <p class="hero-desc reveal reveal-d2">
-      Founder of two security companies. {projectCount} active projects spanning
-      cloud security, AI agents, developer tools, and education.
-      I ship fast and I ship in the open.
+      24 years in cybersecurity. From writing Snort IDS signatures to
+      co-founding India's largest open security community. Now building
+      the tools that keep your AI agents, LLM-powered apps, and agentic
+      infrastructure safe.
     </p>
 
     <div class="hero-stats reveal reveal-d3">
       <div class="stat">
-        <span class="stat-number">2</span>
-        <span class="stat-label">Companies</span>
+        <span class="stat-number">24</span>
+        <span class="stat-label">Years in Security</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Companies Founded</span>
       </div>
       <div class="stat">
         <span class="stat-number">{projectCount}</span>
-        <span class="stat-label">Projects</span>
+        <span class="stat-label">Active Projects</span>
       </div>
       <div class="stat">
         <span class="stat-number">2</span>
-        <span class="stat-label">Books</span>
+        <span class="stat-label">Books Published</span>
       </div>
-      <div class="stat">
-        <span class="stat-number">10+</span>
-        <span class="stat-label">Open Source</span>
-      </div>
+    </div>
+
+    <div class="hero-proof reveal reveal-d3">
+      <p>Books recommended by PortSwigger. Published by Packt. Co-founded <a href="https://null.community" target="_blank" rel="noopener">null</a>, India's open security community — 11 years, 6 cities.</p>
     </div>
 
     <div class="hero-actions reveal reveal-d3">
       <a href="#projects" class="btn-primary">See what I'm building <span class="btn-arrow">&darr;</span></a>
-      <a href="/about" class="btn-secondary">About me</a>
+      <a href="/about" class="btn-secondary">The full story</a>
     </div>
   </div>
 </section>
@@ -71,7 +76,7 @@ const projectCount = 26;
   .hero-desc {
     font-size: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);
     color: var(--color-text-dim);
-    max-width: 36rem;
+    max-width: 38rem;
     margin-bottom: 3rem;
     line-height: 1.85;
   }
@@ -79,8 +84,8 @@ const projectCount = 26;
   .hero-stats {
     display: flex;
     gap: 3rem;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--color-border);
     max-width: fit-content;
   }
@@ -107,6 +112,28 @@ const projectCount = 26;
     color: var(--color-text-dim);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  .hero-proof {
+    margin-bottom: 3rem;
+    max-width: 38rem;
+  }
+
+  .hero-proof p {
+    font-size: 0.925rem;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+  }
+
+  .hero-proof a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-light);
+    text-underline-offset: 3px;
+  }
+  .hero-proof a:hover {
+    text-decoration-color: var(--color-accent);
+    color: var(--color-accent);
   }
 
   .hero-actions {
