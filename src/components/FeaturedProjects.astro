@@ -1,7 +1,6 @@
 ---
 import { projects } from '../data/projects';
 
-// Hand-picked featured projects that tell the best story
 const featured = [
   'IndusClaw',
   'Vulnerable MCP Servers Lab',
@@ -20,9 +19,9 @@ const companyLabel: Record<string, string> = {
 
 <section class="featured" id="projects">
   <div class="featured-inner">
-    <p class="section-label reveal">Featured projects</p>
-    <h2 class="featured-heading reveal reveal-d1">What I'm building right now</h2>
-    <p class="featured-sub reveal reveal-d2">A few of the 26 active projects across agentic security, developer tools, and open source.</p>
+    <p class="section-label reveal">Open source</p>
+    <h2 class="featured-heading reveal reveal-d1">I learn by building. Here's what I'm working on.</h2>
+    <p class="featured-sub reveal reveal-d2">26 active projects. These are the ones I'd show you first.</p>
 
     <div class="featured-grid">
       {featured.map((project, i) => {
@@ -137,9 +136,7 @@ const companyLabel: Record<string, string> = {
     color: var(--color-tag-text);
   }
 
-  .featured-more {
-    margin-top: 1.5rem;
-  }
+  .featured-more { margin-top: 1.5rem; }
 
   .more-link {
     font-family: var(--font-mono), ui-monospace, monospace;
