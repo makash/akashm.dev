@@ -6,32 +6,39 @@
   <div class="contact-inner">
     <div class="contact-card reveal">
       <p class="section-label">Get in touch</p>
-      <h2 class="contact-heading">Building with AI agents?<br />Let's talk about securing them.</h2>
-      <p class="contact-sub">Whether you need a security review, training for your team, or just want to compare notes on what's breaking in production — I'm here.</p>
+      <h2 class="contact-heading">Need eyes on your AI security?</h2>
+      <p class="contact-sub">The fastest way to reach me is a DM on X. Or use the form below.</p>
 
-      <form class="contact-form" id="contact-form">
-        <div class="field">
-          <label for="contact-name" class="field-label">Name</label>
-          <input type="text" id="contact-name" name="name" required placeholder="Your name" class="field-input" autocomplete="name" />
-        </div>
+      <div class="contact-quick">
+        <a href="https://x.com/makash" target="_blank" rel="noopener" class="dm-btn">DM @makash on X &nearr;</a>
+        <a href="mailto:akash@kloudle.com" class="dm-btn dm-email">akash@kloudle.com &nearr;</a>
+      </div>
 
-        <div class="field">
-          <label for="contact-email" class="field-label">Email</label>
-          <input type="email" id="contact-email" name="email" required placeholder="you@example.com" class="field-input" autocomplete="email" />
-        </div>
+      <details class="form-details">
+        <summary class="form-toggle">Or send a message here</summary>
+        <form class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="contact-name" class="field-label">Name</label>
+            <input type="text" id="contact-name" name="name" required placeholder="Your name" class="field-input" autocomplete="name" />
+          </div>
 
-        <div class="field">
-          <label for="contact-message" class="field-label">Message</label>
-          <textarea id="contact-message" name="message" required placeholder="What are you working on?" class="field-input field-textarea" rows="4"></textarea>
-        </div>
+          <div class="field">
+            <label for="contact-email" class="field-label">Email</label>
+            <input type="email" id="contact-email" name="email" required placeholder="you@example.com" class="field-input" autocomplete="email" />
+          </div>
 
-        <input type="text" name="hp_field" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="field">
+            <label for="contact-message" class="field-label">Message</label>
+            <textarea id="contact-message" name="message" required placeholder="What are you working on?" class="field-input field-textarea" rows="4"></textarea>
+          </div>
 
-        <button type="submit" class="submit-btn">
-          <span class="submit-text">Send message</span>
-          <svg class="submit-arrow" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="10" x2="16" y2="10"/><polyline points="11,5 16,10 11,15"/></svg>
-        </button>
-      </form>
+          <input type="text" name="hp_field" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="submit-btn">
+            <span class="submit-text">Send message</span>
+          </button>
+        </form>
+      </details>
 
       <div class="success" id="form-success" hidden>
         <p class="success-text">Message sent. I'll get back to you soon.</p>
@@ -68,7 +75,8 @@
       });
       if (!res.ok) throw new Error('Request failed');
 
-      form.hidden = true;
+      const details = form.closest('details');
+      if (details) details.removeAttribute('open');
       if (success) success.hidden = false;
     } catch {
       btnText.textContent = originalText;
@@ -79,7 +87,6 @@
 
 <style>
   .contact { padding: 6rem var(--gutter); }
-
   .contact-inner { max-width: 36rem; margin: 0 auto; }
 
   .contact-card {
@@ -90,21 +97,68 @@
 
   .contact-heading {
     font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--color-text);
   }
 
   .contact-sub {
     font-size: 0.925rem;
     color: var(--color-text-dim);
-    line-height: 1.7;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
+
+  .contact-quick {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .dm-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.25rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: background 0.15s;
+  }
+  .dm-btn:hover { background: var(--color-accent-hover); color: #fff; }
+
+  .dm-email {
+    background: transparent;
+    border: 1px solid var(--color-border-light);
+    color: var(--color-text-dim);
+  }
+  .dm-email:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
+  }
+
+  .form-details { border-top: 1px solid var(--color-border); padding-top: 1.5rem; }
+
+  .form-toggle {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text-dim);
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  .form-toggle::-webkit-details-marker { display: none; }
+  .form-toggle::before { content: '+ '; color: var(--color-accent); }
+  details[open] .form-toggle::before { content: '- '; }
 
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    margin-top: 1.25rem;
   }
 
   .field { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -137,8 +191,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.9rem 2rem;
+    padding: 0.85rem 2rem;
     background: var(--color-accent);
     color: #fff;
     border: none;
@@ -151,9 +204,6 @@
   }
   .submit-btn:hover { background: var(--color-accent-hover); }
   .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-
-  .submit-arrow { transition: transform 0.15s; }
-  .submit-btn:hover .submit-arrow { transform: translateX(2px); }
 
   .success[hidden] { display: none; }
   .success { text-align: center; padding: 2rem 0; }

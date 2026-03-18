@@ -1,0 +1,156 @@
+---
+import { projects } from '../data/projects';
+
+// Hand-picked featured projects that tell the best story
+const featured = [
+  'IndusClaw',
+  'Vulnerable MCP Servers Lab',
+  'ccrank',
+  'agent-browser',
+  'Raptor',
+  'Open CVDB',
+].map(name => projects.find(p => p.name === name)!).filter(Boolean);
+
+const companyLabel: Record<string, string> = {
+  personal: 'Personal',
+  kloudle: 'Kloudle',
+  appsecco: 'Appsecco',
+};
+---
+
+<section class="featured" id="projects">
+  <div class="featured-inner">
+    <p class="section-label reveal">Featured projects</p>
+    <h2 class="featured-heading reveal reveal-d1">What I'm building right now</h2>
+    <p class="featured-sub reveal reveal-d2">A few of the 26 active projects across agentic security, developer tools, and open source.</p>
+
+    <div class="featured-grid">
+      {featured.map((project, i) => {
+        const Tag = project.url ? 'a' : 'div';
+        return (
+          <Tag
+            href={project.url || undefined}
+            target={project.url ? '_blank' : undefined}
+            rel={project.url ? 'noopener' : undefined}
+            class={`featured-card reveal reveal-d${Math.min((i % 3) + 1, 3)}`}
+          >
+            <div class="fc-header">
+              <h3 class="fc-name">{project.name}</h3>
+              <span class="fc-company">{companyLabel[project.company]}</span>
+            </div>
+            <p class="fc-desc">{project.description}</p>
+            <div class="fc-tags">
+              {project.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </Tag>
+        );
+      })}
+    </div>
+
+    <div class="featured-more reveal">
+      <a href="/projects" class="more-link">See all 26 projects &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .featured { padding: 6rem var(--gutter); }
+
+  .featured-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .featured-heading {
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+
+  .featured-sub {
+    font-size: 1rem;
+    color: var(--color-text-dim);
+    margin-bottom: 3rem;
+    max-width: 40rem;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.75rem 2rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    transition: background 0.15s ease;
+    text-decoration: none;
+  }
+  .featured-card:hover { background: var(--color-surface-hover); color: var(--color-text); }
+  a.featured-card { cursor: pointer; }
+
+  .fc-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .fc-name {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .fc-company {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--color-text-dim);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .fc-desc {
+    font-size: 0.925rem;
+    color: var(--color-text-dim);
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  .fc-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+  .tag {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    background: var(--color-tag-bg);
+    color: var(--color-tag-text);
+  }
+
+  .featured-more {
+    margin-top: 1.5rem;
+  }
+
+  .more-link {
+    font-family: var(--font-mono), ui-monospace, monospace;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    transition: opacity 0.15s;
+  }
+  .more-link:hover { opacity: 0.7; }
+
+  @media (max-width: 640px) {
+    .featured-grid { grid-template-columns: 1fr; }
+  }
+</style>
